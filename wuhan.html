@@ -1,0 +1,472 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>【武汉天气预报】武汉天气预报一周_武汉天气预报10天、15天查询—天气网</title>
+<meta content="★天气网（www.tianqi.com）★武汉天气预报提供湖北武汉今日天气、明天天气以及武汉未来一周的天气预报,可以实时查看武汉天气预报一周、10天、15天的天气情况。旅游出行,从天气网开始！" name="description">
+<meta name="keywords" content="武汉天气预报查询,武汉天气预报一周,武汉天气预报10天,武汉天气预报查询15天, 武汉未来一周的天气预报">
+<meta http-equiv='mobile-agent' content='format=xhtml;url=https://m.tianqi.com/wuhan/'>
+<link rel='canonical' href='https://www.tianqi.com/wuhan/' >
+<link href="//pic9.tianqijun.com/static/tianqi2018/css/tianqi.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="//pic9.tianqijun.com/static/js/jquery.min.new.js"></script>
+<script type="text/javascript" src="//pic9.tianqijun.com/static/js/echarts.min.js"></script>
+<script type="text/javascript">
+var pagetype = 'cityindex';
+var cityname = '武汉';
+</script>
+<script type="text/javascript" src="https://m.tianqi.com/getIPinfo/index.php"></script>
+<script type="text/javascript" src="//pic9.tianqijun.com/static/tianqi2018/js/_banner_tianqi.js"></script>
+<script type="text/javascript" src="//pic9.tianqijun.com/static/tianqi2018/js/jQselect.js"></script>
+</head>
+<body>
+<div class="topbox">
+	<div class="topbar"><div class="topnav">
+	<div class="l">武汉天气预报<a href="//www.tianqi.com/index.php?mycity=1" onclick="set(3);">[当前城市]</a></div>
+	<div class="c">
+		| <a href="/news/">资讯</a>
+			<a href="/news/list_404_1.html" title="最新天气">最新天气</a>
+			<a href="/news/list_405_1.html" title="天气常识">天气常识</a>
+			<a href="https://wannianli.tianqi.com/news/" title="万年历" >万年历</a>
+			<a href="/news/list_407_1.html" title="其它资讯">其它资讯</a> | 
+			<a href="/toutiao/" >头条</a> 
+			<a href="/toutiao/tianqi/">天气</a>
+			<a href="/toutiao/hots/">热点</a>
+			<a href="/toutiao/shenghuo/">生活</a>
+			<a href="/toutiao/yule/">娱乐</a>
+			<a href="/toutiao/yangsheng/">养生</a>
+			<a href="/toutiao/lvyou/">旅游</a>
+			<a href="/toutiao/meishi/">美食</a>
+			<a href="/toutiao/gaoxiao/">搞笑</a>
+			<a href="/toutiao/nvxing/">女性</a>	
+	</div>
+	<div class="r"><a href="//m.tianqi.com/" target="_blank">手机天气网</a> | <a href="http://lishi.tianqi.com/wuhan/index.html" target="_blank">历史天气</a></div>
+</div>
+</div>
+	<div class="header wrap1100"><a href="//www.tianqi.com"><div class="logo">武汉天气预报</div></a>
+<div class="search">
+		<div class="searchBar">
+				<div class="name">城市选择：</div>
+				<div class="select">
+						<select onchange="getcity(this.value)" id="province" style="display:none;">
+							<option value="" >请选择省</option>
+		    		    	<option  value="22" py="anhui">A 安徽</option>
+		    		    	<option  value="33" py="aomen">A 澳门</option>
+		    		    	<option  value="01" py="beijing">B 北京</option>
+		    		    	<option  value="04" py="chongqing">C 重庆</option>
+		    		    	<option  value="23" py="fujian">F 福建</option>
+		    		    	<option  value="16" py="gansu">G 甘肃</option>
+		    		    	<option  value="26" py="guizhou">G 贵州</option>
+		    		    	<option  value="28" py="guangdong">G 广东</option>
+		    		    	<option  value="30" py="guangxi">G 广西</option>
+		    		    	<option  value="05" py="heilongjiang">H 黑龙江</option>
+		    		    	<option  value="09" py="hebei">H 河北</option>
+		    		    	<option  value="18" py="henan">H 河南</option>
+		    		    	<option  value="20" py="hubei">H 湖北</option>
+		    		    	<option  value="25" py="hunan">H 湖南</option>
+		    		    	<option  value="31" py="hainan">H 海南</option>
+		    		    	<option  value="06" py="jilin">J 吉林</option>
+		    		    	<option  value="19" py="jiangsu">J 江苏</option>
+		    		    	<option  value="24" py="jiangxi">J 江西</option>
+		    		    	<option  value="07" py="liaoning">L 辽宁</option>
+		    		    	<option  value="08" py="neimenggu">N 内蒙古</option>
+		    		    	<option  value="17" py="ningxia">N 宁夏</option>
+		    		    	<option  value="15" py="qinghai">Q 青海</option>
+		    		    	<option  value="02" py="shanghai">S 上海</option>
+		    		    	<option  value="10" py="shanxi">S 山西</option>
+		    		    	<option  value="11" py="shanxi1">S 陕西</option>
+		    		    	<option  value="12" py="shandong">S 山东</option>
+		    		    	<option  value="27" py="sichuan">S 四川</option>
+		    		    	<option  value="03" py="tianjin">T 天津</option>
+		    		    	<option  value="34" py="taiwan">T 台湾</option>
+		    		    	<option  value="13" py="xinjiang">X 新疆</option>
+		    		    	<option  value="14" py="xicang">X 西藏</option>
+		    		    	<option  value="32" py="hongkong">X 香港</option>
+		    		    	<option  value="29" py="yunnan">Y 云南</option>
+		    		    	<option  value="21" py="zhejiang">Z 浙江</option>
+		    			</select>
+				</div>
+				<div class="select selectr">
+					<select onchange="getzone(this)" style="display:none;" id="city">
+						<option value="" ishot="1">请选择市</option>
+					</select>
+				</div>
+				<div class="select selectr">
+					<select onchange="set('go')" style="display:none;" id="zone">
+						<option value="">请选择县</option>
+					</select>
+				</div>
+				<div class="setbtn"><a href="javascript:;" onclick="set('4');">设为默认</a></div>
+		</div>
+		<div class="r">
+				<form id="index_serch" method="get" action="//www.tianqi.com/index.php" name="index_serch">
+					<input type="hidden" name="c" value="tianqi"><input type="hidden" name="a" value="search">
+					<input id="serch_text" class="search_area" type="text" value="输入城市" onfocus="this.value='';" onblur="if(this.value==''){this.value='输入城市';}"  name="city">
+					<input class="search_button" value="查询" type="submit">
+				</form>
+		</div>
+		<script type="text/javascript">
+		$("#province").selectbox();
+		$("#city").selectbox();
+		$("#zone").selectbox();
+		</script>
+</div>
+
+</div>
+</div>
+<div class="weatherbox">
+	<div class="wrap1100" >
+		<div class="left">
+			<dl class="weather_info">
+			<dt><img src="http://pic.new.tianqijun.com/tianqi/20170821/16417011484cae62ecba5001.jpeg" alt="武汉天气预报"></dt>
+			<dd class="name"><h2>武汉</h2><i><a href="http://www.tianqi.com/chinacity.html">[切换城市]</a></i></dd>
+			<dd class="week">2018年03月25日　星期日　戊戌年二月初九 </dd>
+			<dd class="weather">
+				<i><img src="http://pic9.tianqijun.com/static/wap2018/ico1/b2.png" ></i>
+				<p class="now"><b>19</b><i>℃</i></p>
+				<span><b>阴</b>11 ~ 19℃</span>
+			</dd>	
+			<dd class="shidu"><b>湿度：64%</b><b>风向：东南风 3级</b><b>紫外线：最弱</b></dd>
+			<dd class="kongqi" ><h5 style="background-color:#ffbb17;">空气质量：良</h5><h6>PM: 86</h6><span>日出: 06:20<br />日落: 18:36</span></dd>
+		<dl>
+		</div>
+		<div class="right">
+			<div class="top"><h1>武汉天气预报一周</h1><span><a href="/wuhan/15/">武汉15天天气</a><a href="/wuhan/30/">武汉30天天气</a></span></div>
+			<div class="day7">
+				<ul class="week">
+											<li><b>03月25日</b><span>星期日</span><img src="http://pic9.tianqijun.com/static/wap2018/ico1/b1.png"></li>
+											<li><b>03月26日</b><span>星期一</span><img src="http://pic9.tianqijun.com/static/wap2018/ico1/b1.png"></li>
+											<li><b>03月27日</b><span>星期二</span><img src="http://pic9.tianqijun.com/static/wap2018/ico1/b1.png"></li>
+											<li><b>03月28日</b><span>星期三</span><img src="http://pic9.tianqijun.com/static/wap2018/ico1/b1.png"></li>
+											<li><b>03月29日</b><span>星期四</span><img src="http://pic9.tianqijun.com/static/wap2018/ico1/b1.png"></li>
+											<li><b>03月30日</b><span>星期五</span><img src="http://pic9.tianqijun.com/static/wap2018/ico1/b0.png"></li>
+											<li><b>03月31日</b><span>星期六</span><img src="http://pic9.tianqijun.com/static/wap2018/ico1/b1.png"></li>
+									</ul>
+				<ul class="txt txt2">
+											<li>多云</li>
+											<li>多云</li>
+											<li>多云</li>
+											<li>多云</li>
+											<li>多云</li>
+											<li>晴</li>
+											<li>多云</li>
+									</ul>
+				<div class="zxt_shuju" style="display: none;">
+				<ul>
+											<li><span>19</span><b>11</b></li>
+											<li><span>23</span><b>11</b></li>
+											<li><span>26</span><b>13</b></li>
+											<li><span>27</span><b>16</b></li>
+											<li><span>22</span><b>15</b></li>
+											<li><span>20</span><b>12</b></li>
+											<li><span>23</span><b>12</b></li>
+									</ul>
+				</div>
+				<canvas id="canvas"></canvas>
+				<script type="text/javascript" src="//pic9.tianqijun.com/static/js/canvas.js"></script>
+				<ul class="txt">
+											<li>东南风</li>
+											<li>南风</li>
+											<li>南风</li>
+											<li>东南风</li>
+											<li>东风</li>
+											<li>东风</li>
+											<li>东南风</li>
+									</ul>			
+			</div>
+		</div>
+	</div>
+</div>
+<div class="wrap1100 zhishubox">
+	<div class="city_topbanner">	
+		<div class="l"><script>city_index_left();</script></div>
+		<div class="r"><script>city_index_right();</script></div>
+	</div>
+</div>
+<div class="clear15"></div>
+<div class="wrap1100 mainbox">
+	<div class="left">				
+				<div class="racitybox">
+			<div class="tit02"><h2>武汉主要地区天气预报</h2></div>
+			<ul class="raweather760">
+									<li><a href="/caidian/" title="蔡甸天气预报：阴 10~20℃">
+						<h5>蔡甸</h5>
+						<i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i>
+						<p><b>阴</b>10 ~ <em>20</em>℃</p></a>
+						<a href="/caidian/15/" title="蔡甸天气预报15天" class="d15" target="_blank">></a>
+					</li>
+										<li><a href="/huangpi/" title="黄陂天气预报：阴 10~21℃">
+						<h5>黄陂</h5>
+						<i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i>
+						<p><b>阴</b>10 ~ <em>21</em>℃</p></a>
+						<a href="/huangpi/15/" title="黄陂天气预报15天" class="d15" target="_blank">></a>
+					</li>
+										<li><a href="/xinzhou1/" title="新洲天气预报：阴 11~21℃">
+						<h5>新洲</h5>
+						<i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i>
+						<p><b>阴</b>11 ~ <em>21</em>℃</p></a>
+						<a href="/xinzhou1/15/" title="新洲天气预报15天" class="d15" target="_blank">></a>
+					</li>
+										<li><a href="/jiangxia/" title="江夏天气预报：阴 11~18℃">
+						<h5>江夏</h5>
+						<i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i>
+						<p><b>阴</b>11 ~ <em>18</em>℃</p></a>
+						<a href="/jiangxia/15/" title="江夏天气预报15天" class="d15" target="_blank">></a>
+					</li>
+										<li><a href="/dongxihu/" title="东西湖天气预报：阴 10~20℃">
+						<h5>东西湖</h5>
+						<i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i>
+						<p><b>阴</b>10 ~ <em>20</em>℃</p></a>
+						<a href="/dongxihu/15/" title="东西湖天气预报15天" class="d15" target="_blank">></a>
+					</li>
+										<li><a href="/jianganqu/" title="江岸天气预报：阴 10~20℃">
+						<h5>江岸</h5>
+						<i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i>
+						<p><b>阴</b>10 ~ <em>20</em>℃</p></a>
+						<a href="/jianganqu/15/" title="江岸天气预报15天" class="d15" target="_blank">></a>
+					</li>
+										<li><a href="/jianghanqu/" title="江汉天气预报：阴 10~20℃">
+						<h5>江汉</h5>
+						<i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i>
+						<p><b>阴</b>10 ~ <em>20</em>℃</p></a>
+						<a href="/jianghanqu/15/" title="江汉天气预报15天" class="d15" target="_blank">></a>
+					</li>
+										<li><a href="/qiaokouqu/" title="硚口天气预报：阴 10~20℃">
+						<h5>硚口</h5>
+						<i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i>
+						<p><b>阴</b>10 ~ <em>20</em>℃</p></a>
+						<a href="/qiaokouqu/15/" title="硚口天气预报15天" class="d15" target="_blank">></a>
+					</li>
+										<li><a href="/hanyangqu/" title="汉阳天气预报：阴 10~20℃">
+						<h5>汉阳</h5>
+						<i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i>
+						<p><b>阴</b>10 ~ <em>20</em>℃</p></a>
+						<a href="/hanyangqu/15/" title="汉阳天气预报15天" class="d15" target="_blank">></a>
+					</li>
+										<li><a href="/wuchangqu/" title="武昌天气预报：阴 10~20℃">
+						<h5>武昌</h5>
+						<i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i>
+						<p><b>阴</b>10 ~ <em>20</em>℃</p></a>
+						<a href="/wuchangqu/15/" title="武昌天气预报15天" class="d15" target="_blank">></a>
+					</li>
+										<li><a href="/hongshan/" title="洪山天气预报：阴 10~20℃">
+						<h5>洪山</h5>
+						<i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i>
+						<p><b>阴</b>10 ~ <em>20</em>℃</p></a>
+						<a href="/hongshan/15/" title="洪山天气预报15天" class="d15" target="_blank">></a>
+					</li>
+										<li><a href="/hannanqu/" title="汉南天气预报：阴 11~18℃">
+						<h5>汉南</h5>
+						<i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i>
+						<p><b>阴</b>11 ~ <em>18</em>℃</p></a>
+						<a href="/hannanqu/15/" title="汉南天气预报15天" class="d15" target="_blank">></a>
+					</li>
+								</ul>
+		</div>
+				<div class="clear5"></div>
+		<div class="racitybox ">
+			<div class="tit02"><h2>主要城市天气预报</h2></div>			
+			<ul class="raweather760">
+									<li><a href="/wuhan/" title="武汉天气预报：阴 10~20℃"><h5>武汉</h5><i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i><p><b>阴</b>10 ~ <em>20</em>℃</p></a><a href="/wuhan/15/" title="武汉天气预报15天" class="d15" target="_blank">></a></li>
+									<li><a href="/xiangyang/" title="襄阳天气预报：多云 11~21℃"><h5>襄阳</h5><i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b1.png"></i><p><b>多云</b>11 ~ <em>21</em>℃</p></a><a href="/xiangyang/15/" title="襄阳天气预报15天" class="d15" target="_blank">></a></li>
+									<li><a href="/ezhou/" title="鄂州天气预报：阴 10~18℃"><h5>鄂州</h5><i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i><p><b>阴</b>10 ~ <em>18</em>℃</p></a><a href="/ezhou/15/" title="鄂州天气预报15天" class="d15" target="_blank">></a></li>
+									<li><a href="/xiaogan/" title="孝感天气预报：阴 11~21℃"><h5>孝感</h5><i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i><p><b>阴</b>11 ~ <em>21</em>℃</p></a><a href="/xiaogan/15/" title="孝感天气预报15天" class="d15" target="_blank">></a></li>
+									<li><a href="/huanggang/" title="黄冈天气预报：阴 10~18℃"><h5>黄冈</h5><i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i><p><b>阴</b>10 ~ <em>18</em>℃</p></a><a href="/huanggang/15/" title="黄冈天气预报15天" class="d15" target="_blank">></a></li>
+									<li><a href="/huangshi/" title="黄石天气预报：阴 10~18℃"><h5>黄石</h5><i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i><p><b>阴</b>10 ~ <em>18</em>℃</p></a><a href="/huangshi/15/" title="黄石天气预报15天" class="d15" target="_blank">></a></li>
+									<li><a href="/xianning/" title="咸宁天气预报：阴 10~17℃"><h5>咸宁</h5><i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b2.png"></i><p><b>阴</b>10 ~ <em>17</em>℃</p></a><a href="/xianning/15/" title="咸宁天气预报15天" class="d15" target="_blank">></a></li>
+									<li><a href="/jingzhou/" title="荆州天气预报：多云 11~20℃"><h5>荆州</h5><i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b1.png"></i><p><b>多云</b>11 ~ <em>20</em>℃</p></a><a href="/jingzhou/15/" title="荆州天气预报15天" class="d15" target="_blank">></a></li>
+									<li><a href="/yichang/" title="宜昌天气预报：多云 11~21℃"><h5>宜昌</h5><i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b1.png"></i><p><b>多云</b>11 ~ <em>21</em>℃</p></a><a href="/yichang/15/" title="宜昌天气预报15天" class="d15" target="_blank">></a></li>
+									<li><a href="/shiyan/" title="十堰天气预报：多云 10~22℃"><h5>十堰</h5><i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b1.png"></i><p><b>多云</b>10 ~ <em>22</em>℃</p></a><a href="/shiyan/15/" title="十堰天气预报15天" class="d15" target="_blank">></a></li>
+									<li><a href="/suizhou/" title="随州天气预报：多云 10~22℃"><h5>随州</h5><i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b1.png"></i><p><b>多云</b>10 ~ <em>22</em>℃</p></a><a href="/suizhou/15/" title="随州天气预报15天" class="d15" target="_blank">></a></li>
+									<li><a href="/jingmen/" title="荆门天气预报：多云 10~20℃"><h5>荆门</h5><i><img src="http://pic9.tianqijun.com/static/tianqi2018/ico2/b1.png"></i><p><b>多云</b>10 ~ <em>20</em>℃</p></a><a href="/jingmen/15/" title="荆门天气预报15天" class="d15" target="_blank">></a></li>
+							</ul>
+		</div>
+				<div class="clear5"></div>
+		<div class="racitybox">
+			<div class="tit02"><h3>武汉周边资讯</h3></div>
+			<div class="banner760 b760_04"><script>banner_760_04();</script></div>
+			<ul class="toutiao760b">
+				<li><a href="/toutiao/read/34277.html" title="湖北的春天叫武汉！！" target="_blank">湖北的春天叫武汉！！</a></li><li><a href="/toutiao/read/34116.html" title="江苏藏了个世界级赏樱地，秒杀武汉美过日本！" target="_blank">江苏藏了个世界级赏樱地，秒杀武汉美过日本！</a></li><li><a href="/toutiao/read/33873.html" title="冬天里的芬芳，武汉的梅花已开好，就等你来！" target="_blank">冬天里的芬芳，武汉的梅花已开好，就等你来！</a></li><li><a href="/toutiao/read/33745.html" title="2018想去武汉的，一定要看看这一篇文章！" target="_blank">2018想去武汉的，一定要看看这一篇文章！</a></li><li><a href="/toutiao/read/33338.html" title="官方公布了武汉1月旅游最火的7个地方，赶紧走！" target="_blank">官方公布了武汉1月旅游最火的7个地方，赶紧走！</a></li><li><a href="/toutiao/read/31319.html" title="武汉地界最牛的6家“生烫”牛肉粉 本地人都服气！" target="_blank">武汉地界最牛的6家“生烫”牛肉粉 本地人都服气！</a></li><li><a href="/toutiao/read/31202.html" title="在武汉有一种牛肉粉叫“生烫” 6家味道超绝的生烫粉必须记住！" target="_blank">在武汉有一种牛肉粉叫“生烫” 6家味道超绝的生烫粉必须记住！</a></li><li><a href="/toutiao/read/31060.html" title="10块钱可以在武汉吃到哪些美味小吃？" target="_blank">10块钱可以在武汉吃到哪些美味小吃？</a></li><div class="clear5"></div><li><a href="/toutiao/read/30583.html" title="武汉冬天最爱吃什么肉？吃多还不长胖？" target="_blank">武汉冬天最爱吃什么肉？吃多还不长胖？</a></li><li><a href="/toutiao/read/30574.html" title="2017武汉红榜餐厅，你还剩下多少没打call" target="_blank">2017武汉红榜餐厅，你还剩下多少没打call</a></li><li><a href="/toutiao/read/30431.html" title="武汉人常去的几处赏秋地推荐，你去了吗？" target="_blank">武汉人常去的几处赏秋地推荐，你去了吗？</a></li><li><a href="/toutiao/read/30405.html" title="武汉特色美食从早餐开始，有些你一定没吃过！" target="_blank">武汉特色美食从早餐开始，有些你一定没吃过！</a></li><li><a href="/toutiao/read/30134.html" title="武汉冬季里奇怪的锅，你可能不一定都吃过！" target="_blank">武汉冬季里奇怪的锅，你可能不一定都吃过！</a></li><li><a href="/toutiao/read/30072.html" title="武汉11月仙女餐厅推荐！小仙女又有新去处了！" target="_blank">武汉11月仙女餐厅推荐！小仙女又有新去处了！</a></li><li><a href="/toutiao/read/29996.html" title="我们穿上秋裤，在武汉的火锅店里吃火锅！" target="_blank">我们穿上秋裤，在武汉的火锅店里吃火锅！</a></li><li><a href="/toutiao/read/29538.html" title="武汉到婺源、黄山等地有直达动车了，最快只要2小时" target="_blank">武汉到婺源、黄山等地有直达动车了，最快只要2小时</a></li><div class="clear5"></div>			</ul>
+		</div>
+
+		<div class="clear5"></div>
+		<div class="racitybox bot01">
+			<div class="tit02"><h3>国内主要城市天气预报</h3></div>			
+			<ul class="racity760">
+									
+					<li><a href="/beijing/" title="北京天气预报">北京天气预报</a></li>
+									
+					<li><a href="/shanghai/" title="上海天气预报">上海天气预报</a></li>
+									
+					<li><a href="/tianjin/" title="天津天气预报">天津天气预报</a></li>
+									
+					<li><a href="/chongqing/" title="重庆天气预报">重庆天气预报</a></li>
+									
+					<li><a href="/haerbin/" title="哈尔滨天气预报">哈尔滨天气预报</a></li>
+									
+					<li><a href="/changchun/" title="长春天气预报">长春天气预报</a></li>
+									
+					<li><a href="/shenyang/" title="沈阳天气预报">沈阳天气预报</a></li>
+									
+					<li><a href="/huhehaote/" title="呼和浩特天气预报">呼和浩特天气预报</a></li>
+									
+					<li><a href="/shijiazhuang/" title="石家庄天气预报">石家庄天气预报</a></li>
+									
+					<li><a href="/taiyuan/" title="太原天气预报">太原天气预报</a></li>
+									
+					<li><a href="/xian/" title="西安天气预报">西安天气预报</a></li>
+									
+					<li><a href="/jinan/" title="济南天气预报">济南天气预报</a></li>
+									
+					<li><a href="/wulumuqi/" title="乌鲁木齐天气预报">乌鲁木齐天气预报</a></li>
+									
+					<li><a href="/lasa/" title="拉萨天气预报">拉萨天气预报</a></li>
+									
+					<li><a href="/xining/" title="西宁天气预报">西宁天气预报</a></li>
+									
+					<li><a href="/lanzhou/" title="兰州天气预报">兰州天气预报</a></li>
+									
+					<li><a href="/yinchuan/" title="银川天气预报">银川天气预报</a></li>
+									
+					<li><a href="/zhengzhou/" title="郑州天气预报">郑州天气预报</a></li>
+									
+					<li><a href="/nanjing/" title="南京天气预报">南京天气预报</a></li>
+									
+					<li><a href="/wuhan/" title="武汉天气预报">武汉天气预报</a></li>
+									
+					<li><a href="/hangzhou/" title="杭州天气预报">杭州天气预报</a></li>
+									
+					<li><a href="/hefei/" title="合肥天气预报">合肥天气预报</a></li>
+									
+					<li><a href="/fuzhou/" title="福州天气预报">福州天气预报</a></li>
+									
+					<li><a href="/nanchang/" title="南昌天气预报">南昌天气预报</a></li>
+									
+					<li><a href="/changsha/" title="长沙天气预报">长沙天气预报</a></li>
+									
+					<li><a href="/guiyang1/" title="贵阳天气预报">贵阳天气预报</a></li>
+									
+					<li><a href="/chengdu/" title="成都天气预报">成都天气预报</a></li>
+									
+					<li><a href="/guangzhou/" title="广州天气预报">广州天气预报</a></li>
+									
+					<li><a href="/kunming/" title="昆明天气预报">昆明天气预报</a></li>
+									
+					<li><a href="/nanning/" title="南宁天气预报">南宁天气预报</a></li>
+									
+					<li><a href="/haikou/" title="海口天气预报">海口天气预报</a></li>
+									
+					<li><a href="/taibei/" title="台北天气预报">台北天气预报</a></li>
+							</ul>
+		</div>
+		<div class="clear10"></div>
+		<div class="racitybox bot01">
+			<div class="tit02"><h3>国内各省天气预报</h3></div>			
+			<ul class="racity760">
+									<li><a href="/beijing/" title="北京天气预报">北京天气预报</a></li>
+									<li><a href="/tianjin/" title="天津天气预报">天津天气预报</a></li>
+									<li><a href="/chongqing/" title="重庆天气预报">重庆天气预报</a></li>
+									<li><a href="/shanghai/" title="上海天气预报">上海天气预报</a></li>
+									<li><a href="/province/zhejiang/" title="浙江天气预报">浙江天气预报</a></li>
+									<li><a href="/province/jiangsu/" title="江苏天气预报">江苏天气预报</a></li>
+									<li><a href="/province/fujian/" title="福建天气预报">福建天气预报</a></li>
+									<li><a href="/province/jiangxi/" title="江西天气预报">江西天气预报</a></li>
+									<li><a href="/province/anhui/" title="安徽天气预报">安徽天气预报</a></li>
+									<li><a href="/province/liaoning/" title="辽宁天气预报">辽宁天气预报</a></li>
+									<li><a href="/province/jilin/" title="吉林天气预报">吉林天气预报</a></li>
+									<li><a href="/province/heilongjiang/" title="黑龙江天气预报">黑龙江天气预报</a></li>
+									<li><a href="/province/hainan/" title="海南天气预报">海南天气预报</a></li>
+									<li><a href="/province/guangdong/" title="广东天气预报">广东天气预报</a></li>
+									<li><a href="/province/guangxi/" title="广西天气预报">广西天气预报</a></li>
+									<li><a href="/province/shandong/" title="山东天气预报">山东天气预报</a></li>
+									<li><a href="/province/shanxi/" title="山西天气预报">山西天气预报</a></li>
+									<li><a href="/province/hunan/" title="湖南天气预报">湖南天气预报</a></li>
+									<li><a href="/province/hubei/" title="湖北天气预报">湖北天气预报</a></li>
+									<li><a href="/province/henan/" title="河南天气预报">河南天气预报</a></li>
+									<li><a href="/province/hebei/" title="河北天气预报">河北天气预报</a></li>
+									<li><a href="/province/xinjiang/" title="新疆天气预报">新疆天气预报</a></li>
+									<li><a href="/province/xizang/" title="西藏天气预报">西藏天气预报</a></li>
+									<li><a href="/province/neimenggu/" title="内蒙古天气预报">内蒙古天气预报</a></li>
+									<li><a href="/province/sichuan/" title="四川天气预报">四川天气预报</a></li>
+									<li><a href="/province/yunnan/" title="云南天气预报">云南天气预报</a></li>
+									<li><a href="/province/guizhou/" title="贵州天气预报">贵州天气预报</a></li>
+									<li><a href="/province/shanxi1/" title="陕西天气预报">陕西天气预报</a></li>
+									<li><a href="/province/qinghai/" title="青海天气预报">青海天气预报</a></li>
+									<li><a href="/province/ningxia/" title="宁夏天气预报">宁夏天气预报</a></li>
+									<li><a href="/province/gansu/" title="甘肃天气预报">甘肃天气预报</a></li>
+									<li><a href="/hongkong/" title="香港天气预报">香港天气预报</a></li>
+									<li><a href="/aomen/" title="澳门天气预报">澳门天气预报</a></li>
+									<li><a href="/taiwan/" title="台湾天气预报">台湾天气预报</a></li>
+							</ul>
+		</div>	
+		
+	</div>
+	<div class="right">
+		<div class="clear5"></div>
+		<div class="tit03"><span><a href="/wuhan/life.html">更多+</a></span><h3>武汉今日生活指数</h3></div>
+		<div class="clear10"></div><div class="clear2"></div>
+		<div class="weather_life300">				<ul>
+									<li><i><img src="http://pic9.tianqijun.com/static/wap2018/images/cai_index_yu.png"></i><b>带伞</b><a href="/wuhan/life.html"><p>无需</p></a></li>
+									<li><i><img src="http://pic9.tianqijun.com/static/wap2018/images/cai_index_xc.png"></i><b>洗车</b><a href="/wuhan/life.html"><p>较适宜</p></a></li>
+									<li><i><img src="http://pic9.tianqijun.com/static/wap2018/images/cai_index_uv.png"></i><b>紫外线</b><a href="/wuhan/life.html"><p>弱</p></a></li>
+									<li><i><img src="http://pic9.tianqijun.com/static/wap2018/images/cai_index_ag.png"></i><b>过敏</b><a href="/wuhan/life.html"><p>较易发</p></a></li>
+									<li><i><img src="http://pic9.tianqijun.com/static/wap2018/images/cai_index_dy.png"></i><b>钓鱼</b><a href="/wuhan/life.html"><p>适宜</p></a></li>
+									<li><i><img src="http://pic9.tianqijun.com/static/wap2018/images/cai_index.png"></i><b>穿衣</b><a href="/wuhan/life.html"><p>较舒适</p></a></li>
+									<li><i><img src="http://pic9.tianqijun.com/static/wap2018/images/cai_index_tr.png"></i><b>旅行</b><a href="/wuhan/life.html"><p>适宜</p></a></li>
+									<li><i><img src="http://pic9.tianqijun.com/static/wap2018/images/cai_index_ls.png"></i><b>晾晒</b><a href="/wuhan/life.html"><p>适宜</p></a></li>
+				       
+				</ul>
+		</div>
+		<div class="clear10"></div>
+		<div class="banner300 b300_01"><script>banner_300_01();</script></div>
+<div class="banner300 b300_02"><script>banner_300_02();</script></div>
+<div class="banner300 b300_03"><script>banner_300_03();</script></div>
+<div class="banner300 b300_04"><script>banner_300_04();</script></div>
+<div class="box300">
+	<div class="tit_right"><h3>最新天气资讯</h3></div>
+	<div class="clear5"></div>
+	<ul class="news_txt300">
+				<li class="b"><a href="/news/216319.html" title="中国气象局：气象灾害预警时效缩至5-8分钟" target="_blank">中国气象局：气象灾害预警时效缩至5-8分钟</a></li>
+				<li ><a href="/news/216317.html" title="广西大部中到大雨 桂北局地雷暴大风" target="_blank">广西大部中到大雨 桂北局地雷暴大风</a></li>
+				<li ><a href="/news/216316.html" title="四川泸州市发生3.3级地震  周边地区地震感强烈" target="_blank">四川泸州市发生3.3级地震  周边地区地震感强烈</a></li>
+				<li ><a href="/news/216315.html" title="新不列颠岛发生6.3级地震 目前暂无无人员伤亡" target="_blank">新不列颠岛发生6.3级地震 目前暂无无人员伤亡</a></li>
+				<li ><a href="/news/216314.html" title="今日北京气温回暖至24℃ 未来三天雾霾围城" target="_blank">今日北京气温回暖至24℃ 未来三天雾霾围城</a></li>
+				<li class="b"><a href="/news/216313.html" title="全国交通天气：全国高速路况实时查询3月25日" target="_blank">全国交通天气：全国高速路况实时查询3月25日</a></li>
+				<li ><a href="/news/216312.html" title="北方局地气温回升接近30℃ 广西贵州一带雨水频繁" target="_blank">北方局地气温回升接近30℃ 广西贵州一带雨水频繁</a></li>
+				<li ><a href="/news/216311.html" title="今日重庆多地降温降雨 明后气温开始回暖" target="_blank">今日重庆多地降温降雨 明后气温开始回暖</a></li>
+				<li ><a href="/news/216310.html" title="罗马尼亚遭暴风雪袭击  航班延误多个学校停课" target="_blank">罗马尼亚遭暴风雪袭击  航班延误多个学校停课</a></li>
+				<li ><a href="/news/216309.html" title="清明小长假降至 鄞州部分路段交通管制" target="_blank">清明小长假降至 鄞州部分路段交通管制</a></li>
+				<li class="b"><a href="/news/216308.html" title="京津冀一带迎温暖天 南方大范围降温降水" target="_blank">京津冀一带迎温暖天 南方大范围降温降水</a></li>
+				<li ><a href="/news/216307.html" title="今日北京最高气温22℃ 未来天气以晴为主" target="_blank">今日北京最高气温22℃ 未来天气以晴为主</a></li>
+				<li ><a href="/news/216306.html" title="全国交通天气：全国高速路况实时查询3月24日" target="_blank">全国交通天气：全国高速路况实时查询3月24日</a></li>
+				<li ><a href="/news/216305.html" title="今日广西湖南一带大雨 北方多地迎最暖天" target="_blank">今日广西湖南一带大雨 北方多地迎最暖天</a></li>
+				<li ><a href="/news/216304.html" title="2018扬州清明节天气预报 清明节扬州天气怎么样热吗" target="_blank">2018扬州清明节天气预报 清明节扬州天气怎么样热吗</a></li>
+						
+	</ul>
+</div>
+<div class="banner300 b300_05"><script>banner_300_05();</script></div>
+<div class="banner300 b300_06"><script>banner_300_06();</script></div>
+<div class="clear10"></div>
+<div class="banner300 b300_07"><script>banner_300_07();</script></div>
+<div class="banner300 b300_08"><script>banner_300_08();</script></div>
+<div class="banner300 b300_09"><script>banner_300_09();</script></div>
+	</div>	
+</div>
+<div class="clear10"></div>
+<div class="wrap1100 links">
+	<h6>友情链接</h6>
+	<p><a href="http://www.24timemap.com/china/wuhan" target="_blank">武汉现在几点</a><a href="http://wh.focus.cn" target="_blank">武汉房产网</a><a href="http://wuhan.edeng.cn/" target="_blank">武汉分类信息</a><a href="http://www.hbcct.com.cn/" target="_blank">康辉旅行社官网</a><a href="http://wh.bendibao.com/" target="_blank">武汉本地宝</a><a href="http://www.rexian.net.cn/" target="_blank">热线房产网</a><a href="http://bbs.cnhan.com/" target="_blank">汉网社区</a><a href="http://wuhan.19lou.com/" target="_blank">武汉19楼</a><a href="http://zu.wuhan.fang.com/" target="_blank">武汉租房</a><a href="http://www.yangluo.cn/" target="_blank">阳逻在线</a><a href="http://bbs.0594.com/" target="_blank">莆田论坛</a><a href="http://wuhan.liebiao.com/" target="_blank">武汉分类信息</a><a href="http://www.tielu.cn/wuhan/" target="_blank">武汉铁路局</a><a href="http://wuhan.baixing.com" target="_blank">武汉分类信息网</a><a href="http://wh.fang.anjuke.com/" target="_blank">武汉房产网</a><a href="http://wuhan.anjuke.com/" target="_blank">武汉房产网</a><a href="http://wuhan.fang.com/" target="_blank">武汉房产网</a><a href="http://shanghai.tianqi.com/" target="_blank">上海天气</a><a href="http://time.tianqi.com/" target="_blank">北京时间</a><a href="http://wuhan.gongjiao.com/" target="_blank">武汉公交</a><a href="http://www.027art.com/" target="_blank">武汉美术网</a><a href="http://www.aibang.com/wuhan/" target="_blank">武汉爱帮网</a><a href="http://www.tianqi.com/" target="_blank">天气预报15天查询</a><a href="http://www.tianqi.com/index.php?c=other&a=wxyt" target="_blank">卫星云图天气预报</a><a href="http://www.meilele.com/wuhan/" target="_blank">武汉家具</a><a href="http://wuhan.bitauto.com/" target="_blank">武汉汽车网</a></p>
+</div>
+<div id="footer" class="footer">
+	        天气网提供<a href="//www.tianqi.com/wuhan/">武汉天气预报</a>查询， 包括<a href="//www.tianqi.com/wuhan/7/">武汉天气预报一周</a>，<a href="//www.tianqi.com/wuhan/10/">武汉天气预报10天</a>， <a href="//www.tianqi.com/wuhan/15/">武汉天气预报15天</a>，<a href="//www.tianqi.com/wuhan/30/">武汉天气预报30天</a>查询<br>
+        导航网址：<a href="//www.tianqi.com/chinacity.html" target="_blank">全国天气</a>　<a href="//www.tianqi.com/lvyou/" target="_blank">旅游天气</a>　
+        <a href="//www.tianqi.com/worldcity.html" target="_blank">国际天气</a>　
+        <a href="/news/" target="_blank">天气新闻</a>　<a href="/news/list_405_1.html" target="_blank">天气常识</a>  <a href="//www.tianqi.com/air/" target="_blank">空气质量指数</a> <a href="//wannianli.tianqi.com" target="_blank">万年历查询</a> <a href="//www.tianqi.com/zhuanti/" target="_blank">最新专题</a> <a href="//www.tianqi.com/latest/" target="_blank">最近更新</a>
+        温馨提示：数据来源中国气象局，仅供参考<br>
+	Copyright &copy; 2009-2018
+	<a href="//www.tianqi.com" target="_blank">www.tianqi.com 天气网</a>. All Rights Reserved. 琼ICP备13002747号-1   <a href="//www.tianqi.com/about/us.html" target="_blank" >关于我们</a></p>
+</div>
+<script type="text/javascript" src="//pic9.tianqijun.com/static/tianqi2018/js/city1.js"></script>
+<div style="display:none"><script language="javascript">tongji();</script></div>
+</body>
+</html>
