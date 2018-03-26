@@ -1,0 +1,10 @@
+2018-03-26 20:33:23,433 DEBUG    tianhuijie I'm debug 测试中文
+
+2018-03-26 20:33:23,434 INFO     tianhuijie I'm info    
+
+2018-03-26 20:33:23,434 WARNING  tianhuijie I'm warn    
+
+2018-03-26 20:33:23,434 ERROR    tianhuijie I'm error   
+
+2018-03-26 20:33:23,434 CRITICAL tianhuijie I'm critical
+
