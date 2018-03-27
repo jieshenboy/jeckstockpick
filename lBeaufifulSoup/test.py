@@ -1,23 +1,11 @@
-#!/usr/bin/evn python
+#! /usr/bin/env python
 #-*- coding:utf-8 -*-
-import re
-from bs4 import BeautifulSoup
-import urllib2
-from mylog import MyLog as mylog
 
+import xlwt
 
-def getResponseContent( url):
-
-    try:
-        response = urllib2.urlopen(url.encode('utf8'))
-    except:
-        print('1')
-
-    else:
-
-        return response.read()
-URL = r'http://kaijiang.zhcw.com/zhcw/html/ssq/list_1.html'
-htmlContent = getResponseContent(URL)
-soup = BeautifulSoup(htmlContent,'lxml')
-tag = soup.find_all(re.compile('p'))[-1]
-print(tag)
+if __name__=="__main__":
+    book = xlwt.Workbook(encoding='utf8', style_compression=0)
+    sheet = book.add_sheet('dede')
+    sheet.write(0, 0, 'hstking')
+    sheet.write(1,1, u'中文测试'.encode('utf8'))
+    book.save('1.xls')
