@@ -1,0 +1,9 @@
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding:gzip, deflate, sdch
+Accept-Language:zh-CN,zh;q=0.8
+Cache-Control:max-age=0
+Connection:keep-alive
+Cookie:yinyuetai_uid=a2FyWMsQfaGiuVT49yd6PHye; tid=a3iEIIarBaGkoLczODejpxgW; yyt_pref=2; UM_distinctid=162660967c44cb-07e9523c8f0aad-5d4e211f-1fa400-162660967c5680; u_inf=56746588%02%E7%94%A8%E6%88%B77d3b7b63%02f7fb6c61-33aa-4081-9eb9-9162baf42a19%40yinyuetai.com%02normal_user%02%2F%2Fimg1.c.yinyuetai.com%2Fuploads%2Fdefault%2FbigHeadImg%2Fheader56.gif%020%02; token=6d37c69dc0665092QFK0F1yn6Q3.180cc.0; token3=d3db37184bce6dbcyn6Q3.QFK0F1.UBL0F1.bg.180cc.01.9PFm1; token4=d3db37184bce6dbcyn6Q3.QFK0F1.UBL0F1.bg.180cc.01.9PFm1; pushState=true; route=182c23bc85e7cbe7a35ec34e42397ee4; JSESSIONID=aaaoNaRX00gylgHNyVMjw; CNZZDATA1330456=cnzz_eid%3D1845484296-1522140376-%26ntime%3D1522140376; p2=b31c8a0c76edcc0995f883086927cc50
+Host:i.yinyuetai.com
+Upgrade-Insecure-Requests:1
+User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
