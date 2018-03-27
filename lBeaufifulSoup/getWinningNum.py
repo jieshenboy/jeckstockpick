@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 import urllib2
 from mylog import MyLog as mylog
 from save2excel import SaveBallDate
+
 import sys
 reload(sys)#python的str默认是ascii编码，和unicode编码冲突,这一部分可以载入utf8
 sys.setdefaultencoding('utf8')
