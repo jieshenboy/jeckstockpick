@@ -1,35 +1,38 @@
-1522152539638	geckodriver	INFO	geckodriver 0.20.0
-1522152539646	geckodriver	INFO	Listening on 127.0.0.1:52874
-1522152542691	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "-marionette" "-profile" "C:\\Users\\TIANHU~1\\AppData\\Local\\Temp\\rust_mozprofile.sdIIxBBFr7eQ"
+1522155427722	geckodriver	INFO	geckodriver 0.20.0
+1522155427735	geckodriver	INFO	Listening on 127.0.0.1:61487
+1522155430744	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "-marionette" "-profile" "C:\\Users\\TIANHU~1\\AppData\\Local\\Temp\\rust_mozprofile.BR9mHAwp2rMu"
 Unable to read VR Path Registry from C:\Users\tianhuijie\AppData\Local\openvr\openvrpaths.vrpath
 Unable to read VR Path Registry from C:\Users\tianhuijie\AppData\Local\openvr\openvrpaths.vrpath
 Unable to read VR Path Registry from C:\Users\tianhuijie\AppData\Local\openvr\openvrpaths.vrpath
 Unable to read VR Path Registry from C:\Users\tianhuijie\AppData\Local\openvr\openvrpaths.vrpath
 Unable to read VR Path Registry from C:\Users\tianhuijie\AppData\Local\openvr\openvrpaths.vrpath
-1522152544867	Marionette	INFO	Listening on port 52883
-1522152545825	Marionette	WARN	TLS certificate errors will be ignored for this session
-[Parent 8644, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 15008, Chrome_ChildThread] WARNING: pipe error: 109: file z:/bJavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/client/framework/toolbox.js, line 1961: TypeError: gDevTools.getToolDefinition(...) is null
-JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/client/framework/toolbox.js, line 1961: TypeError: gDevTools.getToolDefinition(...) is null
-[Parent 8488, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 3260, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 3260, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-JavaScript error: resource:///modules/BrowserUsageTelemetry.jsm, line 350: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]
-[Child 9352, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-###!!! [Parent][MessageChannel] Error: (msgtype=0x15008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Closed channel: cannot send/recv
+1522155433462	Marionette	INFO	Listening on port 61495
+1522155433893	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://dps.wtdtjs.com:8085/js/c/cm.js, line 1: unreachable code after return statement
+JavaScript warning: http://dps.wtdtjs.com:8085/js/c/cm.js, line 1: unreachable code after return statement
+JavaScript warning: http://dps.wtdtjs.com:8085/js/c/cm.js, line 2: unreachable code after return statement
+JavaScript warning: http://dps.wtdtjs.com:8085/js/c/cm.js, line 2: unreachable code after return statement
+JavaScript warning: http://dps.wtdtjs.com:8085/js/c/cm.js, line 2: unreachable code after return statement
+JavaScript warning: http://dps.wtdtjs.com:8085/js/c/cm.js, line 3: unreachable code after return statement
+JavaScript warning: http://dps.wtdtjs.com:8085/js/c/cm.js, line 2: unreachable code after return statement
+JavaScript warning: http://dps.wtdtjs.com:8085/js/c/cm.js, line 1: unreachable code after return statement
+JavaScript warning: http://jct.maptu.cn/cm.js, line 1: unreachable code after return statement
+JavaScript warning: http://jct.maptu.cn/cm.js, line 1: unreachable code after return statement
+JavaScript warning: http://jct.maptu.cn/cm.js, line 2: unreachable code after return statement
+JavaScript warning: http://jct.maptu.cn/cm.js, line 2: unreachable code after return statement
+JavaScript warning: http://jct.maptu.cn/cm.js, line 2: unreachable code after return statement
+JavaScript warning: http://jct.maptu.cn/cm.js, line 3: unreachable code after return statement
+JavaScript warning: http://xz-development.oss-cn-beijing.aliyuncs.com/cm.js, line 1: unreachable code after return statement
+JavaScript warning: http://xz-development.oss-cn-beijing.aliyuncs.com/cm.js, line 1: unreachable code after return statement
+JavaScript warning: http://xz-development.oss-cn-beijing.aliyuncs.com/cm.js, line 2: unreachable code after return statement
+JavaScript warning: http://xz-development.oss-cn-beijing.aliyuncs.com/cm.js, line 2: unreachable code after return statement
+JavaScript warning: http://xz-development.oss-cn-beijing.aliyuncs.com/cm.js, line 2: unreachable code after return statement
+JavaScript warning: http://xz-development.oss-cn-beijing.aliyuncs.com/cm.js, line 1: unreachable code after return statement
+[Parent 10508, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8660, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8660, Chrome_ChildThread] WARNI[Child 8908, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8908, Chrome_ChildThread] WARNI[Parent 10508, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
 
-
-
-###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Closed channel: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x150001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
-
-JavaScript error: chrome://browser/content/tab-content.js, line 281: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x150001,name=PBrowser::Msg_AsyncMessage) Closed channel: cannot send/recv
-
-JavaScript error: chrome://browser/content/content.js, line 700: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x15002B,name=PBrowser::Msg_SetInputContext) Closed channel: cannot send/recv
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
